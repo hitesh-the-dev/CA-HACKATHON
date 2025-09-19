@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Notes</title>
+</head>
+<body>
+  <a href="./index.html">Basics of Internet</a>
+  <a href="./ipadress.html">IP Adress</a>
+  <a href="./HTML.html">HTML Notes</a>
+
+    <h1>HTML Notes</h1>
+    <p><b>HTML:</b> Hyper Text Markup Language</p>
+
+    <h2>Client and Server</h2>
+    <p>Jab bhi aap kisi server ko request karenge → response me vo hamko 3 cheeze bhejega:</p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+    </ul>
+    <p>Browser in tino ko samajh kar hume show karega.</p>
+
+    <h2>Explanation</h2>
+    <ul>
+        <li><b>HTML</b> → human body banayega</li>
+        <li><b>CSS</b> → style dega (colour, font, page design, etc.)</li>
+        <li><b>JS</b> → jaan dalega, interaction ke liye</li>
+    </ul>
+
+    <h2>History</h2>
+    <p>1990s me agar kisi website par jana hota tha to poora URL likhna padta tha.</p>
+    <p>Example: <code>https://youtube.com</code></p>
+    <p>Is problem ko solve karne ke liye <b>HTML</b> banayi gayi jisme ek page se dusre page ke link provide ho sake.</p>
+
+    <h3>Hypertext Markup Lang</h3>
+    <ul>
+        <li>Hyperlink → specific word par jana</li>
+        <li>Formatting → bold, italic, underline</li>
+    </ul>
+
+    <h2>Example</h2>
+    <p>File: <code>index.html</code></p>
+    <p>Content: "Hello CA"</p>
+    <p>URL: <code>http://127.0.0.1:3000/index.html</code></p>
+    <p>Output in browser: <b>Hello CA</b></p>
+
+    <h2>Headings</h2>
+    <p>HTML provides 6 levels of headings:</p>
+    <ul>
+        <li><code>&lt;h1&gt;...&lt;/h1&gt;</code></li>
+        <li><code>&lt;h2&gt;...&lt;/h2&gt;</code></li>
+        <li><code>&lt;h3&gt;...&lt;/h3&gt;</code></li>
+        <li><code>&lt;h4&gt;...&lt;/h4&gt;</code></li>
+        <li><code>&lt;h5&gt;...&lt;/h5&gt;</code></li>
+        <li><code>&lt;h6&gt;...&lt;/h6&gt;</code></li>
+    </ul>
+    <p>Importance decreases from h1 to h6. They are block-level elements.</p>
+
+    <h3>Default Sizes</h3>
+    <ul>
+        <li>h1 → 32px</li>
+        <li>h2 → 24px</li>
+        <li>h3 → 18.72px</li>
+        <li>h4 → 16px</li>
+        <li>h5 → 13.28px</li>
+        <li>h6 → 10.72px</li>
+    </ul>
+
+    <h2>Accessibility</h2>
+    <p>Headings improve navigation for screen readers & create a meaningful outline.</p>
+
+    <h2>Facts</h2>
+    <ol>
+        <li>Only one <code>&lt;h1&gt;</code> per page</li>
+        <li>Keywords in headings have more SEO weight</li>
+    </ol>
+
+    <h2>Paragraph</h2>
+    <p>Written with <code>&lt;p&gt; ... &lt;/p&gt;</code></p>
+
+    <h2>Horizontal Rule</h2>
+    <p><code>&lt;hr&gt;</code> → creates a horizontal line</p>
+
+    <h2>Line Break</h2>
+    <p><code>&lt;br&gt;</code> → creates a new line</p>
+
+    <h2>Preformatted Text</h2>
+    <p><code>&lt;pre&gt; ... &lt;/pre&gt;</code> preserves spacing & line breaks.</p>
+
+    <h2>Lists</h2>
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Milk</li>
+        <li>Honey</li>
+        <li>Money</li>
+    </ul>
+
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Milk</li>
+        <li>Honey</li>
+        <li>Money</li>
+    </ol>
+
+    <h3>Custom Markers (Unordered)</h3>
+    <ul>
+        <li><b>disc</b> (default)</li>
+        <li><b>circle</b></li>
+        <li><b>square</b></li>
+        <li><b>none</b></li>
+    </ul>
+
+    <h3>Custom Numbering (Ordered)</h3>
+    <ul>
+        <li>type="1" → Numbers (default)</li>
+        <li>type="A" → Uppercase letters</li>
+        <li>type="a" → Lowercase letters</li>
+        <li>type="I" → Uppercase Roman</li>
+        <li>type="i" → Lowercase Roman</li>
+    </ul>
+
+    <h2>Nested Lists</h2>
+    <ol>
+        <li>Array
+            <ul>
+                <li>1D Array</li>
+                <li>2D Array</li>
+            </ul>
+        </li>
+        <li>Linked List
+            <ul>
+                <li>Singly LL</li>
+                <li>Doubly LL</li>
+                <li>Circular LL
+                    <ol>
+                        <li>Doubly Circular LL</li>
+                    </ol>
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+    <h2>Attributes</h2>
+    <p>HTML elements can have attributes written as <code>name="value"</code></p>
+    <p>Example: <code>&lt;h1 style="color:red;"&gt;Hello&lt;/h1&gt;</code></p>
+
+    <h2>Anchor Tag</h2>
+    <p><code>&lt;a&gt;</code> defines hyperlinks</p>
+    <p>Example: <a href="https://www.w3schools.com">Visit W3Schools</a></p>
+
+    <h3>Target Attribute</h3>
+    <ul>
+        <li><b>_blank</b> → Opens in new tab</li>
+        <li><b>_self</b> → Opens in same tab</li>
+        <li><b>_parent</b> → Opens in parent frame</li>
+        <li><b>_top</b> → Opens in full window</li>
+    </ul>
+
+    <h3>Email and Mobile Links</h3>
+    <p><a href="mailto:abc@gmail.com">Mail</a></p>
+    <p><a href="tel:9023123456">Call</a></p>
+
+    <h2>Images</h2>
+    <p><code>&lt;img src=" " alt=" " width=" " height=" "&gt;</code></p>
+    <ul>
+        <li><b>src</b> → source (address of image)</li>
+        <li><b>alt</b> → alternate text</li>
+        <li><b>width</b> → image width</li>
+        <li><b>height</b> → image height</li>
+    </ul>
+
+    <h2>Absolute vs Relative Path</h2>
+    <p><b>Absolute Path:</b> Full URL or file path</p>
+    <p><b>Relative Path:</b> Path relative to current location</p>
+
+    <h2>Path Examples</h2>
+    <p>Note: jab aap kuch bhi browser link me daloge via ek server tab access milega hai. (example chalakpur)</p>
+    <p>Now we r telling path : India -> delhi -> new delhi -> CP</p>
+    <p>CP &lt;- C</p>
+    <p>ie path kewal whi follow ka skta hai jo abhi dwarka me hai ie rehka 3 relative path.</p>
+    <p>Path 2 delhi ke koi bhi person follow kar skta hai isliye absolute path</p>
+    <p>Eg: &lt;img src="PUNJOT.jpg"&gt; &gt; NOT Recommended ie direct image ko refer karna</p>
+
+    <h2>Folder Structure Example</h2>
+    <pre>
+WEB DEV
+ ├── DAY1
+ │     ├── index.html
+ │     ├── First.html
+ │     └── √ folder
+ │
+ ├── DAY2
+ │     ├── folder    i.e DAY2 me 1 folder hai & three files hai
+ │     │     ├── a.html
+ │     │     └── b.html
+ │     ├── index.html
+ │     ├── second.html
+ │     └── PWI.jpg
+ │
+ └── DAY3
+       ├── index1.html
+       ├── second.html
+       └── PWI01image.jpg
+    </pre>
+
+    <h2>HTML Boilerplate</h2>
+    <pre>
+&lt;!DOCTYPE html&gt;  &lt;!-- HTML ka sth version use krna chahiye ... --&gt;
+&lt;html lang="en"&gt;   &lt;!-- Eske andar html ka code likhenge --&gt;
+&lt;!-- ie hamari jo website hai usme english lang. use ki
+    hai then write : en
+    Hindi : hi
+    both : then jo lang mangey use kiya wala likh do.
+    * Improve SEO nature if we write en/hi --&gt;
+
+&lt;html&gt;   &lt;!-- HTML ROOT Element --&gt;
+
+&lt;body&gt;
+    &lt;!-- Jo content hme apni website pr dikhana hai vo yha likhenge --&gt;
+&lt;/body&gt;
+
+&lt;head&gt;
+    &lt;!-- We write here metadata ie data abt data
+         ie jo kuch bhi apne body tag me likha hai uski
+         info yha dete hai --&gt;
+    (embed internal CSS styles)
+    &lt;title&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;style&gt; &lt;script&gt; embed JS
+    -&gt; links external stylesheet or resources
+&lt;/head&gt;
+
+&lt;meta charset="UTF-8"&gt;
+    &lt;!-- ie body me jo kuch bi data likha hai uska
+         binary conversion karte time utf-8 system follow krna na ki ASCII
+         kyon ki ASCII me level 127 char hi hai. --&gt;
+
+&lt;meta name = "viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;!-- ie jise bhi system (mobile, laptop) me chalana hoga uske
+         hisaab se hi website show kr dena. --&gt;
+
+&lt;title&gt; Document &lt;/title&gt;
+    </pre>
+
+    <h2>Tables</h2>
+    <p>Example table:</p>
+    <table border="1">
+        <caption>Founder List</caption>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Full Name</th>
+                <th>Salary</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill Gates</td>
+                <td>$1000</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve Jobs</td>
+                <td>$2000</td>
+                <td>Company Founder</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry Page</td>
+                <td>$3000</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark Zuckerberg</td>
+                <td>$2000</td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Expense</td>
+                <td>$8000</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Forms</h2>
+    <form>
+        <fieldset>
+            <legend>Registration Form</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name"><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password"><br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+            <label for="dep">Department:</label>
+            <select name="Department" id="dep">
+                <option value="">-- Select your Department --</option>
+                <option value="Engineer">Engineer</option>
+                <option value="Finance">Finance</option>
+                <option value="IT">IT</option>
+                <option value="Rest">Rest</option>
+            </select><br><br>
+
+            <label for="msg">Message:</label><br>
+            <textarea name="msg" id="msg" rows="5" cols="25"></textarea><br><br>
+
+            <input type="checkbox" id="term" name="agree">
+            <label for="term">I agree to the terms and conditions</label><br><br>
+
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+
+    <h2>Media</h2>
+    <p>Audio example:</p>
+    <audio controls>
+        <source src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <p>Video example:</p>
+    <video controls width="320" height="240">
+        <source src="" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+    <p>YouTube video example:</p>
+    <iframe width="320" height="240" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+
+</body>
+</html>

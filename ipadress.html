@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IP Address Notes</title>
+</head>
+<body>
+  <a href="./index.html">Basics of Internet</a>
+  <a href="./ipadress.html">IP Adress</a>
+  <a href="./HTML.html">HTML Notes</a>
+
+  <h1>IP ADDRESS:</h1>
+
+  <h2>Internet Protocol (IP)</h2>
+  <p>Internet ki duniya me jo address liya jata hai system/computer ko usko hi IP address kehte hai.<br>
+  Size = fixed<br>
+  Unique</p>
+
+  <h3>IPv4</h3>
+  <p>4-Byte IP address (eg: 192.36.15.8)<br>
+  three dots<br>
+  192.36.15.8 = 192.36.15.8<br>
+  255.255.255.255</p>
+
+  <p>ab hum system ko address mil gaya.<br>
+  ab mglb bhej Skte ho jise address pe bhejna hai<br>
+  192.36.37.4<br>
+  204.36.91.25</p>
+
+  <p>router ka address dekhna hai<br>
+  traverses aii address dekhna hai<br>
+  Whatsmyip.org<br>
+  … jaise website pe jaake apne system ka IP address dekh sakte hai.</p>
+
+  <p>har device jo internet se connect hai uske IP add milta hai tabhi wo internet se connect hoga.</p>
+
+  <p>32 bits ie 2^32 IP address ie ~400 crore (~4.3 billion) but as time &gt;yad more devices hai jo internet se connect hote hai.<br>
+  Q)How it is possible??</p>
+
+  <h3>IPV6</h3>
+  <p>IPv6 ka generation kiya<br>
+  16 Bytes ka address, 128 addresses.<br>
+  Hexadecimal ko 7aaa.bbbb<br>
+  IPV6</p>
+
+  <pre><code> 1000000000000000:0000000000000000:0000000000000001 </code></pre>
+
+  <p>Decimal ko 2.3.4.6:43F<br>
+  q)IP Address kaise milega?<br>
+  Jo company hamare internet service provide kar rahi hai, woh hamare IP add provide karti hai.<br>
+  ISP (Internet Service Provider)<br>
+  IP address</p>
+
+  <p>Q)PW ki website visit karni hai, toh likha IP add ni dikhte.<br>
+  Pw.com likhe hai, toh hume vo chij mil paati hai. Mouse itna possible!<br>
+  PW.com ---&gt; Translation ---&gt; IP add<br>
+  DNS (Domain Name Service)<br>
+  Domain name ke through IP address milta hai.</p>
+
+  <h3>IP Address</h3>
+  <p>Static IP add<br>
+  Ye IP add change nahi hota</p>
+
+  <p>Dynamic IP add<br>
+  Ye change ho sakta hai</p>
+
+  <p>Eg: (Jab computer internet se connect hota hai, jo net onka ste hai, toh ISP hume us time pe IP add dega. Jab hum internet ko off kar denge, toh vo IP add chala jayega. Ab wohi IP add kisi aur ko de diya ho.<br>
+  Ye humare liye IP add dynamic hai, but youtube ka IP add fixed hota hai.)</p>
+
+  <p>Let’s try searching youtube.com. ISP se IP add kaise milta hai.<br>
+  Vo dekhte hai.<br>
+  Searching youtube.com<br>
+  ISP → Root name server → TCP level domain → Numeric name server</p>
+
+  <p>Again same add milta hai.<br>
+  Vina Root name server, domain ke help se IP add milta hai.</p>
+
+  <hr>
+
+  <h3>IP address:</h3>
+  <p>Class A: 0.0.0.0 to 127.255.255.255<br>
+    - Can be anything from 0 to 255.<br>
+    - Range for Class A: (0-127) Fixed.</p>
+
+  <p>Class B: 10.0.0.0 to 128.0.0.191<br>
+    - Range for Class B: (128-191) Fixed.</p>
+
+  <p>Class C: 110.0.0.0 to 192.0.0.223<br>
+    - Range for Class C: (192-223) Fixed.</p>
+
+  <p>Class D: 1110.0.0.0 to 224.0.0.239<br>
+  Class E: 1111.0.0.0 to 240.0.0.255</p>
+
+  <hr>
+
+  <h3>IP Address Breakdown</h3>
+  <p>Network | Host ID</p>
+
+  <h4>Class A:</h4>
+  <p>- Lowest: 00000000.00000000<br>
+  - Highest: 11111111.11111111</p>
+
+  <h4>Class B:</h4>
+  <p>- Lowest: 10.00000000.00000000<br>
+  - Highest: 10.11111111.11111111</p>
+
+  <h4>Class C:</h4>
+  <p>- Lowest: 110.00000000.00000000<br>
+  - Highest: 110.11111111.11111111</p>
+
+  <p>Class D:<br>
+  - Fixed range for multicast.<br>
+  Class E:<br>
+  - Reserved for future use.</p>
+
+  <p>Ye again given IP add me zyada pehle 110 hai, aur isse baad de classes.</p>
+
+  <h3>Why we have made classes??</h3>
+  <p>INTERNATIONAL Number rakhne kiye IP add dete hai<br>
+  but de akein kiya, jaise kahan se IP add milega.</p>
+
+  <p>Isse Pata chalata hai.</p>
+
+  <p>Ye IANA ne valid iso five parts me divide kiya hai.<br>
+  Asia ke region ke liye ek part bana diya, same for Europe.</p>
+
+  <p>ab Asia ke jitne bhi country hai unko IP add dene ka kaam Asia-Pacific ka hai.<br>
+  ab Asia-Pacific bhi khud se IP add har particular system ko dehi deti, ye us particular country me jo bhi mobile network companies hai (like in India Airtel, Jio), unko IP add de deti hai, ab companies unke customers ko IP add deti.</p>
+
+  <p>Now let's know why we have divided IP add into five classes.<br>
+  eg: Let Airtel ko 2 crore IP add chhange.</p>
+
+  <p>Jio "3 crore"<br>
+  Idea "2 crore"</p>
+
+  <p>and kuch small countries hai Asia ki, usme let koi company hai unko SlaC IP add chhange. koi aa hai unko 5ok IP add chhange.<br>
+  ye kuch companies aise hai jinko cranes me IP add chhange kuch ko last me.</p>
+
+  <h3>Allocation examples</h3>
+  <p>Let Idea ko I.S.P cname IP add. chaye , ab NIA-NIC Idea ko<br>
+  meaningful way me IP add. dega so that maintain easily ho sake<br>
+  (naaki koi bhi iss cname IP add de dega)</p>
+
+  <p>Let Idea ko 73.0.0.0<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;73.255.255.255   &gt; inke bich me jitne bhi IP add hai<br>
+                                               Vo Idea ko de diye<br>
+                                               i.e 2^24 - 1 i.e cname idea ko<br>
+                                               de diye</p>
+
+  <p>ab let Airtel ko I.S.P cname chaye<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;87.0.0.0<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;87.255.255.255   &gt; inke bich ke saare IP<br>
+                                                       add de diye<br>
+                                                       i.e 2^24 mil gikte hai cnaame ko<br>
+                                                       IP add de diye<br>
+                                                       i.e total = 2^28 cname</p>
+
+  <p>i.e jin ISP ko cname me IP add chaye inke no km honge as compare<br>
+  to ISP jinko lacks me chaye<br>
+  eg NIA me let 20 ISP hai jinko cname me chaye & ISP jinko<br>
+  lacks me chaye wo &gt; 20 honge , bcz bhut saari<br>
+  companies ki population km hai</p>
+
+  <h4>Class A: 0 – 127</h4>
+  <p>-----------------------------</p>
+
+  <p>|  8 bit  |      24 bit       |<br>
+  | N/w ID  |     Host ID       |</p>
+
+  <p>2^24 - 1 = 167 cname</p>
+
+  <p>‘ eg Idea ko 73 wali IP de di i.e 73.0.0.0 to 73.255.255.255<br>
+      Airtel ko 123 wali IP de di</p>
+
+  <p>i.e hn ek network ID me 167 cname host (users) ho sakte hai<br>
+  (devices/system)</p>
+
+  <p>Host ID: 2^24<br>
+     |----------------|----------------|<br>
+     Broadcast add.   Network address</p>
+
+  <p>ye do add company khud ke liye rkh leti hai</p>
+
+  <h4>i.e Total Host ID = 2^n - 2</h4>
+
+  <p>eg let airtel ko 72 N/w ID de di  i.e 73.0.0.0 to 73.255.255.255<br>
+  72 Network address hogi<br>
+  1 Broadcast address hogi</p>
+
+  <p>i.e 1st wali N/w add & last wali add is Broadcast add.<br>
+  ab let Airtel ko apne sabhi users ko "Mango wali ID" ka msg bhejna hai<br>
+  to ye (cname) hn kisi ko single msg nhi bhejega<br>
+  ye apne Broadcast add ko add krega & fir ek msg sabhi users ko same<br>
+  msg chala jayega.<br>
+  i.e use Broadcast add.<br>
+  ese time bhi bach jata h.</p>
+
+  <h4>Class A: 0 – 127 (notes)</h4>
+  <p>* 0.0.0.0 → ye wali N/w ID & 127.0.0.0 → ye wali<br>
+     N/w ID kisi ko nhi di jati.<br>
+     i.e at N/w ID : 1 to 126  & Host ID = 2^24 – 2</p>
+
+  <p>127.0.0.0 → kisi ko nhi di jati  (Loop back add)</p>
+
+  <p>0.0.0.0 ka use: let aaj kisi ne new mobile purchase kara & usko<br>
+  IP add. chaye & vo airtel ko msg bhejega ki mujhe IP add de do.<br>
+  ye first communication krne ke liye bhi<br>
+  eg mobile ko IP add chaye hoga & us case me vo use by default<br>
+  0th wali N/w ID se IP add mil jata hai then ISP usko IP add dega<br>
+  jo ID us ISP ke paas hai.</p>
+
+  <p>192.36.43.36</p>
+
+  <h4>Class B:</h4>
+  <p>-----------------------------</p>
+
+  <p>|  16 bit  |      16 bit       |<br>
+  | N/w ID   |     Host ID       |</p>
+
+  <p>i.e (N/w ID) = 65K<br>
+  i.e 2^16 = 65K<br>
+  (Host ID) = 65K - 2</p>
+
+  <h4>Class C:</h4>
+  <p>-----------------------------</p>
+
+  <p>|  24 bit  |      8 bit        |<br>
+  | N/w ID   |     Host ID       |</p>
+
+  <p>n (Host ID) = 2^8 - 2<br>
+  n (N/w ID) = 2^24</p>
+
+  <p>* Jab bhi koi company IP add purchase krti hai to usko ek complete N/w ID di jati<br>
+  hai na ki koi sub part. eg: 73.0.0.0 to 73.255.255.255</p>
+
+  <h4>Class D: 1110 .........  → use for Multicasting</h4>
+  <p>* No N/w ID & Host ID → 2^28 IP add</p>
+
+  <p>eg Let ek online class chal rhi hai jisme 1lac users jude hue hai<br>
+  & kya hn ek user ko single IP add pr content smjhaya<br>
+  juega kya??</p>
+
+  <p>= Nhi, Broadcasting bhi nhi ka skte kyonki sabhi users same<br>
+     mobile network company ki sim use nhi kr rhe honge<br>
+     use users multicasting krte hai.</p>
+
+  <p>Content ab ap content ke sath multicasting add<br>
+  daal doge jise ye hn ek user ko milne lgega.</p>
+
+  <hr>
+
+  <h4>Class E: 1111 .........</h4>
+  <p>* No N/w ID & Host ID → Reserved for future use<br>
+     (experiments)</p>
+
+  <p>* i.e Jis company (ISP) ko cname me IP add chaye vo Class A ke<br>
+     pass jayenge, jinka thoda km vo Class B ke pass & so on.</p>
+
+  <hr>
+
+  <h3>Private IP Address Ranges:</h3>
+  <p>Private IP addes are defined by the<br>
+  internet standards and fall into specific ranges within the<br>
+  IPv4 address space. These ranges are reserved for private use,<br>
+  are not allocated or routable on the Public internet. The reserved<br>
+  ranges r:</p>
+
+  <h4>1) Class A Private Range:</h4>
+  <p>Range: 10.0.0.0 to 10.255.255.255<br>
+  no. of addresses: ≈ 16.7 million</p>
+
+  <h4>2) Class B Private Range:</h4>
+  <p>172.16.0.0 to 172.31.255.255<br>
+  no. of address =1M</p>
+
+  <h4>3) Class C private Range:</h4>
+  <p>192.168.0.0. to 192.168.255.255<br>
+  no. of address=65K</p>
+
+</body>
+</html>
